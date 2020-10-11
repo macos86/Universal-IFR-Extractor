@@ -13,7 +13,16 @@ This fork provides linux prebuit binary. If you want to build it by yourself, ex
 
 ## Usage
 
-Extract the Setup.bin PE32 Image section clicking on "Extract Image" when you are using UEFITool (after searching for "CFG Lock") - then save the file as .bin
+Extract the Setup.bin PE32 Image section clicking on "Extract Body" when you are using UEFITool (after searching for "CFG Lock") - then save the file as .bin
+
+![Step 1](/Images/Screenshot%20at%202020-10-11%2015-26-08.png)
+
+
+![Step 2](/Images/Screenshot%20at%202020-10-11%2015-26-39.png)
+
+![Step 3](/Images/Screenshot%20at%202020-10-11%2015-25-26.png)
+
+
 
 After you've done that, use ifrextractor in order to be able to read the .bin file in a .txt format
 
