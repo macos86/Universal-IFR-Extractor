@@ -19,17 +19,21 @@ mkdir build; pushd build; cmake ..; make
 
 ## Usage
 
-Extract the Setup.bin PE32 Image section clicking on "Extract Body" when you are using UEFITool (after searching for "CFG Lock") - then save the file as .bin
+- Drag your BIOS image file over [UEFITool](https://github.com/LongSoft/UEFITool/releases)
+
+- Search the desired BIOS option,
 
 ![Step 1](/Images/Screenshot%20at%202020-10-11%2015-26-08.png)
 
-
+- (e.g. `CFG Lock`)
 ![Step 2](/Images/Screenshot%20at%202020-10-11%2015-26-39.png)
 
+- Right click the PE32 Image section and choose `Extract Body`then save the file as `.bin`, and name it as desired, e.g `Setup.bin`
 ![Step 3](/Images/Screenshot%20at%202020-10-11%2015-25-26.png)
 
 
+- After you've done that, use `ifrextractor` in order to be able to read the .bin file in a .txt format
 
-After you've done that, use ifrextractor in order to be able to read the .bin file in a .txt format
-
-`./ifrextract Setup.bin Setup.txt`
+```
+./ifrextract Setup.bin Setup.txt
+```
