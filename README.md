@@ -1,4 +1,4 @@
-IFR Extractor LS v0.3
+IFR Extractor LS v0.3.7 for linux
 =======================
 
 Utility to extract the internal forms representation from both EFI and UEFI drivers/applications into human readable text file.
@@ -9,7 +9,13 @@ Original code by Donovan6000, rewritten UEFI.cpp by TomRus88, fixes and addition
 
 This fork provides linux prebuit binary. If you want to build it by yourself, execute the following:
 
-`cd Downloads; sudo apt install git cmake; git clone https://github.com/macos86/Universal-IFR-Extractor.git; mkdir build; pushd build; cmake ..; make`
+```
+cd Downloads
+sudo apt install git cmake; 
+git clone https://github.com/macos86/Universal-IFR-Extractor.git; 
+cd Universal-IFR-Extractor
+mkdir build; pushd build; cmake ..; make
+```
 
 ## Usage
 
